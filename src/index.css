@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-50: #fefcf3;
+  --color-gold-100: #faf4d3;
+  --color-gold-200: #f4e4a3;
+  --color-gold-300: #ebd06a;
+  --color-gold-400: #dfb33a;
+  --color-gold-500: #d4981d;
+  --color-gold-600: #b57714;
+  --color-gold-700: #905511;
+  --color-gold-800: #744312;
+  --color-gold-900: #603613;
+  --color-gold-gold: #D4AF37; /* Metallic Gold Accent */
+  
+  --color-brand-blue-50: #f0f7ff;
+  --color-brand-blue-100: #e0effe;
+  --color-brand-blue-200: #bae0fd;
+  --color-brand-blue-300: #7cc7fc;
+  --color-brand-blue-400: #38a9f8;
+  --color-brand-blue-500: #0ea5e9;
+  --color-brand-blue-600: #0284c7;
+  --color-brand-blue-700: #0369a1;
+  --color-brand-blue-800: #075985;
+  --color-brand-blue-900: #0c4a6e;
+  --color-brand-blue-950: #041d33;
+}
+
+/* Custom CSS Scrollbar and Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-blue-800);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+/* Metallic gold text effect */
+.text-metallic-gold {
+  background: linear-gradient(135deg, #f3e7c4 0%, #d4af37 50%, #aa7c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Dark mode adjustments */
+.dark-gradient-bg {
+  background: radial-gradient(circle at 50% 50%, #062b4d 0%, #031424 100%);
+}
+
+.light-gradient-bg {
+  background: radial-gradient(circle at 50% 50%, #f7fafc 0%, #edf2f7 100%);
+}
+
+/* Glassmorphism Classes */
+.glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(4, 29, 51, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-gold-light {
+  background: rgba(254, 252, 243, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.glass-gold-dark {
+  background: rgba(28, 21, 5, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+

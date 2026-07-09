@@ -1,0 +1,6 @@
+{
+  "name": "Nimai Math & Science Classes",
+  "description": "Premium educational website for Nimai Math & Science Classes, Class 6-12 Math & Science Coaching Centre.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
